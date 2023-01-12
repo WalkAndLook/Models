@@ -1,0 +1,25 @@
+# PASCAL VOC dataset http://host.robots.ox.ac.uk/pascal/VOC/
+# Train command: python train.py --data voc.yaml
+# Default dataset location is next to /yolov5:
+#   /parent_folder
+#     /VOC
+#     /yolov5
+
+
+# download command/URL (optional)
+#download: bash data/scripts/get_voc.sh
+
+# train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
+train: mydata_yibiao2/train.txt  # 16551 images
+val: mydata_yibiao2/val.txt  # 4952 images
+
+# number of classes
+nc: 1
+
+# class names
+# yaml配置文件不能用‘’‘ '''的注释
+names: ["yibiao"]
+
+
+
+#names: ['00040007', '00060001', '00060000', '00040005', '00040006', '00050000', '00040000', '00050001', '00090001', '00090008', '00090009', '00090005', 'yibiao', '00130000', '00040001', '00040003', '00090000', '00090002', '00000001', '00210001', '00210000', '00220000', '00220001', '00090003', '00090006', '00100001', '00090004', '00090007', '00100000', '00000000', '00060004', '00060007', '00110001', '00150000', '00040002', '00060006', '0000001']
